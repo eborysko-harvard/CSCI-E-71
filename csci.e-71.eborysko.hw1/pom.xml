@@ -1,0 +1,8 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>csci.e-71.eborysko</groupId>
+  <artifactId>csci.e-71.eborysko.hw1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Homework 1</name>
+  <description>Homework assignment 1 for CSCI E-71</description>
+</project>
