@@ -47,6 +47,8 @@ public class TestHW1 {
 		assertEquals("1 + 0 = 1", 1, tester.sum(1, 0) );
 		assertEquals("2 + 1 = 3", 3, tester.sum(2, 1) );
 		assertEquals("4 + 3 = 7", 7, tester.sum(4, 3) );
+		
+		assertEquals("4 + -7 = -3", -3, tester.sum(4, -7) );
 	}
 
 	/**
@@ -62,7 +64,13 @@ public class TestHW1 {
 		//assertEquals("0 + null = 0", 0, tester.sum(new Integer(0), y ));
 		//assertEquals("null + 0 = 0", 0, tester.sum( x, new Integer(0)) );
 		
+		
 		assertEquals("0 + 0 = 0", 0, tester.sum(new Integer(0), new Integer(0)) );
+		assertEquals("0 + 1 = 1", 1, tester.sum(new Integer(0), new Integer(1)) );
+		assertEquals("1 + 2 = 3", 3, tester.sum(new Integer(1), new Integer(2)) );
+		assertEquals("3 + 4 = 7", 7, tester.sum(new Integer(3), new Integer(4)) );
+		
+		assertEquals("4 + -7 = -3", -3, tester.sum(new Integer(4), new Integer(-7)) );
 		
 	}
 
