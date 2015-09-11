@@ -9,7 +9,7 @@ CWD=`pwd`
 MAIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # go to main project dir
 cd $MAIN_DIR/../../csci.e-71.eborysko.hw1/
-echo "Running mvn clean test in $MAIN_DIR"
+echo "Running mvn clean test"
 # running maven clean test
 MVN_RESULT=$(mvn clean test 2>&1)
 if [ $? -ne 0 ]; then
@@ -21,6 +21,10 @@ if [ $? -ne 0 ]; then
   cd $CWD
   exit 1
 fi
+echo "mvn results..."
+echo "$MVN_RESULT"
+echo "Successfully completed mvn clean test"
+
 # go back to current working dir
 cd $CWD
 
