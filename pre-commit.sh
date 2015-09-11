@@ -8,7 +8,8 @@ echo "Running mvn clean test for errors"
 CWD=`pwd`
 MAIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # go to main project dir
-cd $MAIN_DIR/../../../
+cd $MAIN_DIR/../../csci.e-71.eborysko.hw1/
+echo "Running mvn clean test in $MAIN_DIR"
 # running maven clean test
 MVN_RESULT=$(mvn clean test 2>&1)
 if [ $? -ne 0 ]; then

@@ -71,7 +71,7 @@ public class TestHW1 {
 		assertEquals("3 + 4 = 7", 7, tester.sum(new Integer(3), new Integer(4)) );
 		
 		assertEquals("4 + -7 = -3", -3, tester.sum(new Integer(4), new Integer(-7)) );
-		assertEquals("-3 + -7 = -10", -3, tester.sum(new Integer(-3), new Integer(-7)) );
+		assertEquals("-3 + -7 = -10", -10, tester.sum(new Integer(-3), new Integer(-7)) );
 		
 	}
 
