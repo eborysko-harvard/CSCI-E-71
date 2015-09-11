@@ -7,7 +7,7 @@ import org.eclipse.jdt.annotation.NonNull;
 
 /**
  * @author eborysko
- *
+ * Homework 1
  */
 public class HW1 {
 	
