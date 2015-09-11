@@ -41,7 +41,6 @@ public class TestHW1 {
 	 */
 	@Test
 	public void testSumIntInt() {
-		//fail("Not yet implemented");
 		
 		assertEquals("0 + 0 = 0", 0, tester.sum(0, 0) );
 		assertEquals("1 + 0 = 1", 1, tester.sum(1, 0) );
@@ -56,14 +55,6 @@ public class TestHW1 {
 	 */
 	@Test
 	public void testSumIntegerInteger() {
-		//fail("Not yet implemented");
-		//Integer x,y;
-		//x = null;
-		//y = null;
-		
-		//assertEquals("0 + null = 0", 0, tester.sum(new Integer(0), y ));
-		//assertEquals("null + 0 = 0", 0, tester.sum( x, new Integer(0)) );
-		
 		
 		assertEquals("0 + 0 = 0", 0, tester.sum(new Integer(0), new Integer(0)) );
 		assertEquals("0 + 1 = 1", 1, tester.sum(new Integer(0), new Integer(1)) );
