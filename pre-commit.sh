@@ -21,10 +21,11 @@ if [ $? -ne 0 ]; then
   cd $CWD
   exit 1
 fi
+
 echo "mvn results..."
 echo "$MVN_RESULT"
 echo "Successfully completed mvn clean test"
 
 # go back to current working dir
 cd $CWD
-
+exit 0
