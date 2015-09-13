@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>csci.e-71.eborysko</groupId>
   <artifactId>csci.e-71.eborysko.hw1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <name>Homework 1</name>
   <description>Homework assignment 1 for CSCI E-71</description>
   <dependencies>
@@ -33,4 +33,23 @@
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>external.atlassian.jgitflow</groupId>
+            <artifactId>jgitflow-maven-plugin</artifactId>
+            <version>1.0-m5.1</version>
+            <configuration>
+                <flowInitContext>
+         			<masterBranchName>master</masterBranchName>
+         			<developBranchName>devlopment</developBranchName>
+         			<featureBranchPrefix>feature-</featureBranchPrefix>
+         			<releaseBranchPrefix>release-</releaseBranchPrefix>
+         			<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+         			<versionTagPrefix>blither-</versionTagPrefix>
+       </flowInitContext>
+            </configuration>
+        </plugin>
+    </plugins>
+   </build>
 </project>
